@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoKidCore", "PhotoKidCore.csproj", "{B42362FD-0085-9007-064B-AB80BDEC064B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiscCore", "MiscCore.csproj", "{EA64D831-1FAA-01A5-56EE-9A521B7BF6DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B42362FD-0085-9007-064B-AB80BDEC064B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42362FD-0085-9007-064B-AB80BDEC064B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42362FD-0085-9007-064B-AB80BDEC064B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42362FD-0085-9007-064B-AB80BDEC064B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA64D831-1FAA-01A5-56EE-9A521B7BF6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA64D831-1FAA-01A5-56EE-9A521B7BF6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA64D831-1FAA-01A5-56EE-9A521B7BF6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA64D831-1FAA-01A5-56EE-9A521B7BF6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
