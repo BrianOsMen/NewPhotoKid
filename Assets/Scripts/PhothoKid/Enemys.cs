@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemys : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Enemys : MonoBehaviour
     public string trueEnemyAtack;
     public int healt;
     public int maxHealt;
+    public Text box;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +51,7 @@ public class Enemys : MonoBehaviour
     private void OnTriggerExit()
     {
         isTrigger = false;
+        box.text = "";
     }
 
     void OnTriggerEnter(Collider other)
@@ -105,6 +108,7 @@ public class Enemys : MonoBehaviour
         enemyAtack = Atack();
         trueEnemyAtack = ReplaceR(enemyAtack);
         Debug.Log(enemyAtack);
+        box.text = enemyAtack;
     }
 
     private string ReplaceR(string str)

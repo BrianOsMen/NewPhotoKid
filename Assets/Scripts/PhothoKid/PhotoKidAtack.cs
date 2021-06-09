@@ -9,12 +9,13 @@ public class PhotoKidAtack : MonoBehaviour
     private bool recoverKidHealt;
     private bool inRecovery;
     public int kidHealt;
+    public int kidMaxHealt;
 
     // Start is called before the first frame update
     void Start()
     {
         atacksAcerts = 0;
-        kidHealt = 100;
+        kidHealt = kidMaxHealt;
         inRecovery = false;
     }
 
@@ -94,7 +95,7 @@ public class PhotoKidAtack : MonoBehaviour
 
     void RecoveryHealt()
     {
-        if (kidHealt < 100 && recoverKidHealt && !inRecovery && kidHealt > 0)
+        if (kidHealt < kidMaxHealt && recoverKidHealt && !inRecovery && kidHealt > 0)
         {
             StartCoroutine(DelayRecovery(1.0f));
         }
