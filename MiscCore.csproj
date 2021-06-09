@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Misc\MainCamController.cs" />
+    <Compile Include="Assets\Scripts\Misc\FocusHealtBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Misc\MiscCore.asmdef" />

@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\PhothoKid\PhotoKidAtack.cs" />
     <Compile Include="Assets\Scripts\PhothoKid\PhotoKidController.cs" />
     <Compile Include="Assets\Scripts\PhothoKid\Enemys.cs" />
+    <Compile Include="Assets\Scripts\PhothoKid\HealtBarController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\PhothoKid\PhotoKidCore.asmdef" />
