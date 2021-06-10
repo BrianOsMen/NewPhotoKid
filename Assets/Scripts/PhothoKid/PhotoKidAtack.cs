@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class PhotoKidAtack : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class PhotoKidAtack : MonoBehaviour
     private bool inRecovery;
     public int kidHealt;
     public int kidMaxHealt;
+    public GameObject joy;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +20,7 @@ public class PhotoKidAtack : MonoBehaviour
         atacksAcerts = 0;
         kidHealt = kidMaxHealt;
         inRecovery = false;
+        joy.SetActive(false);
     }
 
     // Update is called once per frame
@@ -52,6 +56,7 @@ public class PhotoKidAtack : MonoBehaviour
                 if(d.healt < 1)
                 {
                     Destroy(GameObject.Find(d.name));
+                    joy.SetActive(false);
                 }
             }
         }
@@ -60,12 +65,15 @@ public class PhotoKidAtack : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         d = other.GetComponent<Enemys>();
+        if(d != null)
+            joy.SetActive(true);
     }
 
     private void OnTriggerExit()
     {
         d = null;
         atacksAcerts = 0;
+        joy.SetActive(false);
     }
 
     private void AtackEnemy()
